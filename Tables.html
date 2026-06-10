@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tables display data in rows and columns so it is easy to read and compare. -->
+    <!--
+        <table> creates the table and contains all rows and cells.
+        <caption> gives the table a visible title and helps users understand the content.
+        <thead> groups the heading rows at the top of the table.
+        <tbody> groups the main body rows with the actual data.
+        <tr> creates one row in the table.
+        <th> creates a header cell, usually shown as bold text.
+        <td> creates a normal data cell for regular values.
+        rowspan and colspan allow one cell to stretch across multiple rows or columns.
+    -->
+
+    <!-- The table below shows how table headers and data rows are organized. -->
+    <table border="1" cellspacing="0" cellpadding="8">
+        <caption>Student Information</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Student Name</th>
+                <th rowspan="2">Courses</th>
+                <th colspan="2">Hours</th>
+            </tr>
+            <tr>
+                <th>Credit Hours</th>
+                <th>Contact Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ashish</td>
+                <td>Computer Science</td>
+                <td>5</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Mathematics</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--
+        Notes for beginners:
+        - Use <caption> to describe what the table is about.
+        - Use <thead> for header rows so users and browsers know which cells are titles.
+        - Use <tbody> for the main data so the table structure is clear.
+        - Use <th> cells for headings, and <td> cells for actual values.
+        - rowspan="2" means the cell covers two rows.
+        - colspan="2" means the cell covers two columns.
+        - border, cellspacing, and cellpadding are simple styling options, but in real projects CSS is preferred.
+    -->
+</body>
+</html>

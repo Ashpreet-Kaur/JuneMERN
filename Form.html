@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Forms let users enter information and send it to the website. -->
+
+    <h1>Form</h1>
+    <p>This is a simple form.</p>
+
+    <!-- The <label> tag describes the input that follows it. -->
+    <!-- The <input> tag creates a field where the user can type or choose data. -->
+    <!-- The type attribute tells the browser what kind of input is expected. -->
+    <form>
+        <label>Username</label>
+        <input type="text" name="username">
+        <!-- type="text" creates a normal text field. -->
+        <br><br>
+
+        <label>Email</label>
+        <input type="email" name="email">
+        <!-- type="email" makes the field expect an email address. -->
+        <br><br>
+
+        <label>Password</label>
+        <input type="password" name="password">
+        <!-- type="password" hides the text while the user types. -->
+        <br><br>
+
+        <label>DoB</label>
+        <input type="datetime-local" name="dob">
+        <!-- type="datetime-local" lets the user choose a date and time. -->
+        <br><br>
+
+        <label>Age</label>
+        <input type="number" name="age">
+        <!-- type="number" allows only number input. -->
+        <br><br>
+
+        <label>Contact</label>
+        <input type="tel" name="contact">
+        <!-- type="tel" is used for phone numbers. -->
+        <br><br>
+
+        <label>Gender</label>
+        <!-- Radio buttons let the user choose only one option. -->
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br><br>
+
+        <label>Skills</label>
+        <!-- Checkboxes allow more than one choice. -->
+        <input type="checkbox" name="skills" value="mern">MERN
+        <input type="checkbox" name="skills" value="php">PHP
+        <input type="checkbox" name="skills" value="python">Python
+        <input type="checkbox" name="skills" value="java">Java
+        <br><br>
+
+        <!-- The submit button sends the form content to the server. -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
