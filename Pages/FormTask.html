@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Form Practice Task</title>
+    <!-- No CSS: layout uses plain HTML only as requested -->
+</head>
+<body>
+    <div>
+        <h1>Form Practice Task</h1>
+        
+        <form action="#" method="get" novalidate>
+            <fieldset>
+                <legend>Account</legend>
+                <label for="username">Username</label><br>
+                <input id="username" name="username" type="text" required minlength="5" placeholder="choose a username"><br>
+                <small>Required — at least 5 characters.</small>
+                <br><br>
+
+                <label for="password">Password</label><br>
+                <input id="password" name="password" type="password" required minlength="8" placeholder="create a password"><br>
+                <small>Required — at least 8 characters.</small>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full name</label><br>
+                <input id="fullname" name="fullname" type="text" placeholder="First Last" required>
+                <br><br>
+
+                <label for="dob">Date of birth</label><br>
+                <input id="dob" name="dob" type="date">
+                <br><br>
+
+                <label for="age">Age</label><br>
+                <input id="age" name="age" type="number" min="1" max="120" placeholder="e.g. 21">
+                <br><br>
+
+                <label>Gender</label><br>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                <br><br>
+
+                <label for="phone">Phone</label><br>
+                <input id="phone" name="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br><br>
+
+                <label for="city">City</label><br>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>-- choose a city --</option>
+                    <option>Amritsar</option>
+                    <option>Chandigarh</option>
+                    <option>Jalandhar</option>
+                    <option>Patiala</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills & Preferences</legend>
+                <label>Skills (choose any)</label><br>
+                <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="python"> Python</label>
+                <br><br>
+
+                <label for="experience">Experience level</label><br>
+                <select id="experience" name="experience">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+            </fieldset>
+
+            <label for="notes">Notes / Comments</label><br>
+            <textarea id="notes" name="notes" rows="4" placeholder="Write any notes or practice instructions here"></textarea>
+            <br><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr>
+       
+    </div>
+</body>
+</html>

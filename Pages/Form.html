@@ -8,20 +8,23 @@
 <body>
     <!-- Forms let users enter information and send it to the website. -->
 
+
+
+
     <h1>Form</h1>
     <p>This is a simple form.</p>
 
     <!-- The <label> tag describes the input that follows it. -->
     <!-- The <input> tag creates a field where the user can type or choose data. -->
     <!-- The type attribute tells the browser what kind of input is expected. -->
-    <form>
-        <label>Username</label>
-        <input type="text" name="username">
+    <form method="get" action="Basics.html" novalidate>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" required minlength="5" placeholder="Enter Name">
         <!-- type="text" creates a normal text field. -->
         <br><br>
 
         <label>Email</label>
-        <input type="email" name="email">
+        <input type="email" name="email" required>
         <!-- type="email" makes the field expect an email address. -->
         <br><br>
 
@@ -36,7 +39,7 @@
         <br><br>
 
         <label>Age</label>
-        <input type="number" name="age">
+        <input type="number" name="age" max="100" min="1">
         <!-- type="number" allows only number input. -->
         <br><br>
 
@@ -47,22 +50,66 @@
 
         <label>Gender</label>
         <!-- Radio buttons let the user choose only one option. -->
-        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="male" required>Male
         <input type="radio" name="gender" value="female">Female
         <input type="radio" name="gender" value="other">Other
         <br><br>
 
         <label>Skills</label>
         <!-- Checkboxes allow more than one choice. -->
-        <input type="checkbox" name="skills" value="mern">MERN
+        <input type="checkbox" name="skills" value="mern" required>MERN
         <input type="checkbox" name="skills" value="php">PHP
         <input type="checkbox" name="skills" value="python">Python
         <input type="checkbox" name="skills" value="java">Java
         <br><br>
 
+        <label>City</label>
+        <select name="city" required>
+            <option disabled selected>--Select a City--</option>
+            <option>Amritsar</option>
+            <option>Chandigarh</option>
+            <option>Jalandhar</option>
+            <option >Patiala</option>
+        </select>
+        <br><br>
+
+        <label>Comment</label>
+        <textarea cols="30" rows="5"></textarea>
+        <br><br>
+
         <!-- The submit button sends the form content to the server. -->
-        <input type="submit" value="Submit">
+        <button>Submit</button>
     </form>
+
+
+
+    <hr>
+
+    <br><br><br><br>
+
+
+
+
+    <!-- fieldset and legend tags group related form elements.
+        fieldset creates a box around the related elements, and legend provides a caption for the fieldset.
+    -->
+    
+
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Name</label>
+        <input type="text">
+    </fieldset>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label>Email</label>
+        <input type="email">
+    </fieldset>
+</form>
+
+
 
 </body>
 </html>
