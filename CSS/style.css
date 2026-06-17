@@ -1,0 +1,162 @@
+/*css
+ ==========================================
+   CSS TYPES
+   ========================================== */
+
+/*
+1. Inline CSS
+
+<p style="color:red;">Hello</p>
+
+Highest Priority
+*/
+
+
+/*
+2. Internal CSS
+
+<style>
+    p{
+        color:red;
+    }
+</style>
+
+Second Priority
+*/
+
+
+/*
+3. External CSS
+
+style.css
+
+p{
+    color:red;
+}
+
+Third Priority
+*/
+
+
+/* ==========================================
+   CSS PRIORITY
+   ========================================== */
+
+/*
+
+Inline CSS
+    ↓
+Internal CSS
+    ↓
+External CSS
+
+
+IMPORTANT:
+
+If Internal CSS and External CSS
+have the same specificity,
+the style written later wins.
+
+*/
+
+
+/* ==========================================
+   ID SELECTOR
+   ========================================== */
+
+#title{
+    color: steelblue;
+}
+
+
+/* ==========================================
+   CLASS SELECTOR
+   ========================================== */
+
+.subtitle{
+    color: crimson;
+}
+
+
+/* ==========================================
+   ELEMENT SELECTOR
+   ========================================== */
+
+p{
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   UNIVERSAL SELECTOR
+   ========================================== */
+
+/*
+*{
+    color:red;
+}
+*/
+
+
+/* ==========================================
+   COLOR PROPERTY
+   ========================================== */
+
+/* Named Color */
+
+.named-color{
+    color: blue;
+}
+
+
+/* RGB Color */
+
+.rgb-color{
+    color: rgb(255,0,0);
+}
+
+
+/* HEX Color */
+
+.hex-color{
+    color: #00AAFF;
+}
+
+
+/* HSL Color */
+
+.hsl-color{
+    color: hsl(120,100%,40%);
+}
+
+
+/* ==========================================
+   BACKGROUND COLOR PROPERTY
+   ========================================== */
+
+/* Named Color */
+
+.bg-named{
+    background-color: yellow;
+}
+
+
+/* RGB Color */
+
+.bg-rgb{
+    background-color: rgb(255,255,0);
+}
+
+
+/* HEX Color */
+
+.bg-hex{
+    background-color: #FFFF00;
+}
+
+
+/* HSL Color */
+
+.bg-hsl{
+    background-color: hsl(60,100%,50%);
+}
