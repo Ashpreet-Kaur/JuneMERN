@@ -1,0 +1,253 @@
+/* =====================================================
+   CSS TYPOGRAPHY NOTES
+   Typography means styling and formatting text.
+   ===================================================== */
+
+
+/* =====================================================
+   UNIVERSAL SELECTOR
+   Applies styles to all elements on the page.
+   ===================================================== */
+
+*{
+    font-family: Arial, sans-serif;
+
+    /*
+    font-family
+
+    Purpose:
+    Changes the typeface of the text.
+
+    Common Examples:
+    Arial
+    Times New Roman
+    Verdana
+    Georgia
+    Poppins
+    Raleway
+
+    Syntax:
+    font-family: Arial, sans-serif;
+
+    Fallback fonts are provided in case
+    the first font is not available.
+    */
+}
+
+
+
+/* =====================================================
+   HEADING STYLES
+   ===================================================== */
+
+#heading{
+
+    /*
+    font-size
+
+    Purpose:
+    Changes the size of text.
+
+    
+    Example:
+    font-size: 42px;
+    */
+
+    font-size: 42px;
+
+
+
+    /*
+    font-weight
+
+    Purpose:
+    Controls text thickness.
+
+    Values:
+    normal
+    bold
+    bolder
+    lighter
+
+    Numeric Values:
+    100 to 900
+
+    Example:
+    font-weight: bold;
+    */
+
+    font-weight: bolder;
+
+
+
+    /*
+    font-style
+
+    Purpose:
+    Changes the style of text.
+
+    Values:
+    normal
+    italic
+
+    Example:
+    font-style: italic;
+    */
+
+    font-style: italic;
+
+
+
+    /*
+    text-align
+
+    Purpose:
+    Aligns text horizontally.
+
+    Values:
+    left
+    center
+    right
+    justify
+
+    Example:
+    text-align: center;
+    */
+
+    text-align: right;
+
+
+
+    /*
+    text-transform
+
+    Purpose:
+    Changes letter casing.
+
+    Values:
+    uppercase
+    lowercase
+    capitalize
+
+    Example:
+    text-transform: uppercase;
+    */
+
+    text-transform: lowercase;
+
+
+
+    /*
+    text-decoration
+
+    Purpose:
+    Adds decoration lines to text.
+
+    Values:
+    underline
+    overline
+    line-through
+    none
+
+    Example:
+    text-decoration: underline;
+    */
+
+    /* text-decoration: line-through; */
+
+
+
+    /*
+    letter-spacing
+
+    Purpose:
+    Controls spacing between letters.
+
+    Positive value increases spacing.
+    Negative value decreases spacing.
+
+    Example:
+    letter-spacing: 2px;
+    */
+
+    letter-spacing: 2px;
+
+    background-color: lightblue;
+}
+
+
+
+/* =====================================================
+   PARAGRAPH STYLES
+   ===================================================== */
+
+#paragraph{
+
+    font-size: 18px;
+
+
+
+    /*
+    text-align: justify
+
+    Purpose:
+    Makes both left and right edges
+    of paragraph appear aligned.
+    */
+
+    text-align: justify;
+
+
+
+    /*
+    word-spacing
+
+    Purpose:
+    Controls spacing between words.
+
+    Example:
+    word-spacing: 5px;
+    */
+
+    word-spacing: 6px;
+
+
+
+    /*
+    line-height
+
+    Purpose:
+    Controls spacing between lines.
+
+    Larger value creates more space
+    between lines and improves readability.
+
+    Example:
+    line-height: 30px;
+    */
+
+    line-height: 30px;
+
+    background-color: lightpink;
+}
+
+
+
+/* =====================================================
+   QUICK REVISION TABLE
+   =====================================================
+
+   Property          Purpose
+
+   font-family       Changes font style
+   font-size         Changes text size
+   font-weight       Changes text thickness
+   font-style        Makes text italic
+   text-align        Aligns text
+   text-transform    Changes letter case
+   text-decoration   Adds text decoration
+   letter-spacing    Space between letters
+   word-spacing      Space between words
+   line-height       Space between lines
+
+   ===================================================== */

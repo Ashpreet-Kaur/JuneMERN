@@ -1,0 +1,306 @@
+/* =====================================================
+   CSS BOX MODEL AND DISPLAY NOTES
+   ===================================================== */
+
+
+/* =====================================================
+   BOX MODEL
+   =====================================================
+
+   Every HTML element is treated as a box.
+
+   Box Model consists of:
+
+   1. Content
+   2. Padding
+   3. Border
+   4. Margin
+
+   -------------------------
+   |        Margin         |
+   |  -------------------  |
+   |  |     Border      |  |
+   |  | -------------   |  |
+   |  | | Padding   |   |  |
+   |  | | Content   |   |  |
+   |  | -------------   |  |
+   |  -------------------  |
+   -------------------------
+
+   ===================================================== */
+
+
+.box{
+
+    background-color: lightblue;
+
+    border: 2px solid black;
+
+
+    /*
+    WIDTH
+
+    Purpose:
+    Controls horizontal size of element.
+
+    Example:
+    width: 300px;
+    */
+
+    width: 300px;
+
+
+
+    /*
+    HEIGHT
+
+    Purpose:
+    Controls vertical size of element.
+
+    Example:
+    height: 100px;
+    */
+
+    height: 100px;
+
+
+
+    /*
+    PADDING
+
+    Purpose:
+    Creates space INSIDE the border.
+
+    Content and border move away
+    from each other.
+
+    Example:
+    padding: 20px;
+
+    Shorthand:
+
+    padding: 20px;
+    All sides
+
+    padding: 20px 40px;
+    Top-Bottom Left-Right
+
+    padding: 10px 20px 30px 40px;
+    Top Right Bottom Left
+    */
+
+    padding: 20px;
+
+
+
+    /*
+    MARGIN
+
+    Purpose:
+    Creates space OUTSIDE the border.
+
+    Distance between elements increases.
+
+    Example:
+    margin: 20px;
+
+    Shorthand:
+
+    margin: 20px;
+    All sides
+
+    margin: 20px 40px;
+    Top-Bottom Left-Right
+
+    margin: 10px 20px 30px 40px;
+    Top Right Bottom Left
+    */
+
+    margin: 30px;
+}
+
+
+
+/* =====================================================
+   BLOCK ELEMENTS
+   =====================================================
+
+   Examples:
+   h1
+   h2
+   p
+   div
+   ul
+   ol
+
+   Characteristics:
+
+   1. Start on a new line.
+   2. Take full available width.
+   3. Height and width work.
+   4. Margin works.
+   5. Padding works.
+
+   ===================================================== */
+
+.block-example{
+
+    background-color: lightgreen;
+
+    width: 250px;
+
+    height: 60px;
+
+    padding: 20px;
+
+    margin: 20px;
+}
+
+
+
+/* =====================================================
+   INLINE ELEMENTS
+   =====================================================
+
+   Examples:
+   a
+   span
+   strong
+   em
+
+   Characteristics:
+
+   1. Do not start on a new line.
+   2. Take only required width.
+   3. Height does NOT work.
+   4. Width does NOT work.
+   5. Left and Right margin work.
+   6. Top and Bottom margin usually
+      do not affect layout.
+
+   ===================================================== */
+
+a{
+
+    background-color: lightcoral;
+
+    width: 200px;     /* ignored */
+
+    height: 50px;     /* ignored */
+
+    padding: 20px;
+
+    margin: 20px;
+}
+
+
+
+/* =====================================================
+   DISPLAY PROPERTY
+   =====================================================
+
+   Purpose:
+   Changes how an element behaves.
+
+   Syntax:
+
+   display: value;
+
+   Common Values:
+
+   block
+   inline
+   inline-block
+   none
+
+   ===================================================== */
+
+
+
+/*
+=====================================================
+DISPLAY: BLOCK
+=====================================================
+
+Makes element behave like block element.
+
+Characteristics:
+
+1. Starts on new line.
+2. Takes full width.
+3. Height works.
+4. Width works.
+*/
+
+.inline-example{
+
+    display: block;
+
+    background-color: gold;
+
+    width: 200px;
+
+    margin: 10px;
+}
+
+
+
+/*
+=====================================================
+DISPLAY: INLINE
+=====================================================
+
+Makes element behave like inline element.
+
+Characteristics:
+
+1. Stays in same line.
+2. Width ignored.
+3. Height ignored.
+
+Example:
+
+display: inline;
+*/
+
+
+
+/*
+=====================================================
+DISPLAY: INLINE-BLOCK
+=====================================================
+
+Combination of inline and block.
+
+Characteristics:
+
+1. Stays in same line.
+2. Width works.
+3. Height works.
+4. Padding works.
+5. Margin works.
+
+Very commonly used.
+
+Example:
+
+display: inline-block;
+*/
+
+
+
+/*
+=====================================================
+DISPLAY: NONE
+=====================================================
+
+Element completely disappears.
+
+1. Not visible.
+2. Occupies no space.
+3. Removed from page layout.
+
+Example:
+
+display: none;
+*/

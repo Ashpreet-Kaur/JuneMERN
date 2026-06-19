@@ -1,0 +1,307 @@
+/* =====================================================
+   CSS POSITION PROPERTY
+   =====================================================
+
+   Position Property controls where an element
+   appears on a webpage.
+
+   Syntax:
+
+   position: value;
+
+   Common Values:
+
+   static
+   relative
+   absolute
+   fixed
+
+   ===================================================== */
+
+
+
+/* =====================================================
+   COMMON BOX STYLING
+   ===================================================== */
+
+.box{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+/* =====================================================
+   POSITION: STATIC
+   =====================================================
+
+   Default position of every element.
+
+   Characteristics:
+
+   1. Elements appear in normal document flow.
+   2. top, left, right, bottom do NOT work.
+   3. No special positioning.
+
+   Example:
+
+   position: static;
+
+   ===================================================== */
+
+#box1{
+    background-color: lightblue;
+
+    /* position: static; */
+}
+
+
+
+/* =====================================================
+   POSITION: RELATIVE
+   =====================================================
+
+   Relative means:
+
+   "Move element relative to its original position."
+
+   Characteristics:
+
+   1. Element remains in normal flow.
+   2. Original space remains reserved.
+   3. top, left, right, bottom work.
+
+   Example:
+
+   position: relative;
+   left: 20px;
+   top: 10px;
+
+   ===================================================== */
+
+#box1{
+
+    background-color: lightblue;
+
+    /*
+    position: relative;
+
+    left: 20px;
+    top: 10px;
+    */
+}
+
+
+
+/* =====================================================
+   POSITION: ABSOLUTE
+   =====================================================
+
+   Absolute means:
+
+   Position element relative to the nearest
+   positioned ancestor.
+
+   Positioned ancestor means parent having:
+
+   position: relative;
+   position: absolute;
+   position: fixed;
+
+   Characteristics:
+
+   1. Removed from normal document flow.
+   2. Other elements behave as if it does not exist.
+   3. top, right, bottom and left work.
+
+   ===================================================== */
+
+.container{
+
+    position: relative;
+
+    /*
+    Important:
+
+    Making parent relative allows
+    absolute child to use parent
+    as reference.
+    */
+
+    background-color: aliceblue;
+}
+
+
+
+#box2{
+
+    background-color: lightpink;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 20px;
+
+    height: 100px;
+
+    width: 100px;
+}
+
+
+
+#box3{
+    background-color: lightgreen;
+}
+
+#box4{
+    background-color: lightsalmon;
+}
+
+
+
+/* =====================================================
+   TOP, RIGHT, BOTTOM, LEFT
+   =====================================================
+
+   These properties work with:
+
+   relative
+   absolute
+   fixed
+
+   They specify distance from a side.
+
+   Example:
+
+   top: 20px;
+   right: 10px;
+   bottom: 30px;
+   left: 40px;
+
+   ===================================================== */
+
+
+
+/* =====================================================
+   HERO SECTION EXAMPLE
+   ===================================================== */
+
+.hero-section{
+
+    /*
+    Parent becomes positioning reference
+    for absolute child.
+    */
+
+    position: relative;
+}
+
+
+
+img{
+
+    height: 500px;
+}
+
+
+
+/* =====================================================
+   ABSOLUTE TEXT OVER IMAGE
+   =====================================================
+
+   Very common real-world example.
+
+   Used in:
+
+   Hero Sections
+   Banners
+   Advertisements
+   Cards
+
+   ===================================================== */
+
+.hero-text{
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 20px;
+}
+
+
+
+/* =====================================================
+   POSITION: FIXED
+   =====================================================
+
+   Fixed means:
+
+   Element stays fixed on screen
+   even when page scrolls.
+
+   Characteristics:
+
+   1. Removed from normal flow.
+   2. Remains visible while scrolling.
+   3. Commonly used for:
+
+      - Chat buttons
+      - Back to top buttons
+      - Help buttons
+      - Floating action buttons
+
+   ===================================================== */
+
+button{
+
+    height: 70px;
+
+    width: 70px;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background-color: green;
+
+    color: white;
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+}
+
+
+
+/* =====================================================
+   QUICK REVISION TABLE
+   =====================================================
+
+   static
+   ------
+   Default positioning
+   No movement
+
+   relative
+   --------
+   Moves from original position
+   Original space remains
+
+   absolute
+   --------
+   Removed from normal flow
+   Uses nearest positioned parent
+
+   fixed
+   -----
+   Fixed on screen
+   Remains visible during scrolling
+
+   ===================================================== */
