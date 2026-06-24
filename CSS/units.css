@@ -1,0 +1,223 @@
+/* =====================================================
+   CSS UNITS
+   =====================================================
+
+   Units are used to specify size, width,
+   height, spacing and font sizes.
+
+   CSS Units are divided into two categories:
+
+   1. Absolute Units
+   2. Relative Units
+
+   ===================================================== */
+
+
+
+/* =====================================================
+   ABSOLUTE UNITS
+   =====================================================
+
+   Absolute units have fixed values.
+
+   Their size does not depend on
+   any parent element or screen size.
+
+   Common Absolute Unit:
+
+   px (pixels)
+
+   Example:
+
+   width: 300px;
+   height: 100px;
+   font-size: 20px;
+
+   ===================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+
+    /*
+    Fixed height using pixels.
+
+    500px means exactly 500 pixels.
+    */
+
+    height: 500px;
+}
+
+
+
+/* =====================================================
+   VIEWPORT UNITS
+   =====================================================
+
+   Viewport = Visible area of browser.
+
+   vw = Viewport Width
+   vh = Viewport Height
+
+   ===================================================== */
+
+.container{
+
+    background-color: antiquewhite;
+
+
+
+    /*
+    WIDTH: 50vw
+
+    Means:
+
+    50% of browser width.
+
+    Example:
+
+    Browser Width = 1000px
+
+    50vw = 500px
+    */
+
+    width: 50vw;
+
+
+
+    /*
+    HEIGHT: 50vh
+
+    Means:
+
+    50% of browser height.
+
+    Example:
+
+    Browser Height = 800px
+
+    50vh = 400px
+    */
+
+    height: 50vh;
+}
+
+
+
+/* =====================================================
+   PERCENTAGE UNIT (%)
+   =====================================================
+
+   Percentage is a relative unit.
+
+   It depends on the size
+   of the parent element.
+
+   ===================================================== */
+
+.box{
+
+    background-color: lightseagreen;
+
+
+
+    /*
+    Parent width = Browser width
+
+    width: 50%
+
+    Means:
+
+    50% of parent's width.
+    */
+
+    width: 50%;
+
+
+
+    /*
+    height: 50%
+
+    Means:
+
+    50% of parent's height.
+    */
+
+    height: 50%;
+
+
+
+    /*
+    Fixed font size.
+
+    This becomes reference for em.
+    */
+
+    font-size: 20px;
+}
+
+
+
+/* =====================================================
+   EM UNIT
+   =====================================================
+
+   em is a relative unit.
+
+   It depends on the font-size
+   of the parent element.
+
+   Formula:
+
+   1em = Parent Font Size
+
+   ===================================================== */
+
+p{
+
+    /*
+    Parent (.box) font-size = 20px
+
+    2em = 40px
+
+    Therefore paragraph font size
+    becomes 40px.
+    */
+
+    font-size: 2em;
+}
+
+
+
+/* =====================================================
+   QUICK REVISION
+   =====================================================
+
+   px
+   --
+   Fixed size
+   Absolute Unit
+
+   %
+
+   --
+   Relative to parent element
+
+   em
+   --
+   Relative to parent font size
+
+   vw
+   --
+   Relative to browser width
+
+   vh
+   --
+   Relative to browser height
+
+   ===================================================== */

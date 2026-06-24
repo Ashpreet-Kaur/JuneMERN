@@ -1,0 +1,286 @@
+/* =====================================================
+   FLEXBOX
+   =====================================================
+
+   Flexbox is a one-dimensional layout system.
+
+   It helps us:
+
+   - Align items
+   - Distribute space
+   - Create responsive layouts
+   - Center elements easily
+
+   To use Flexbox:
+
+   display: flex;
+
+   ===================================================== */
+
+
+
+/* =====================================================
+   FLEX CONTAINER
+   =====================================================
+
+   Parent becomes Flex Container.
+
+   Children become Flex Items.
+
+   ===================================================== */
+
+.container{
+
+    display: flex;
+    border: 2px solid black;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* =====================================================
+   FLEX ITEMS
+   ===================================================== */
+
+.box{
+
+    width: 150px;
+
+    height: 150px;
+
+    background-color: lightseagreen;
+
+    border: 1px solid black;
+}
+
+
+
+/* =====================================================
+   FLEX-DIRECTION
+   =====================================================
+
+   Controls main axis direction.
+
+   Values:
+
+   row
+   row-reverse
+   column
+   column-reverse
+
+   Default:
+
+   flex-direction: row;
+
+   ===================================================== */
+
+
+/*
+.container{
+    display:flex;
+    flex-direction: row;
+}
+*/
+
+
+/*
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+}
+*/
+
+
+/*
+.container{
+    display:flex;
+    flex-direction: column;
+}
+*/
+
+
+/*
+.container{
+    display:flex;
+    flex-direction: column-reverse;
+}
+*/
+
+
+
+/* =====================================================
+   JUSTIFY-CONTENT
+   =====================================================
+
+   Aligns items along MAIN AXIS.
+
+   Row Direction:
+   Main Axis = Horizontal
+
+   Column Direction:
+   Main Axis = Vertical
+
+   Values:
+
+   flex-start
+   center
+   flex-end
+   space-between
+   space-around
+   space-evenly
+
+   ===================================================== */
+
+
+/*
+justify-content:flex-start;
+*/
+
+
+/*
+justify-content:center;
+*/
+
+
+/*
+justify-content:flex-end;
+*/
+
+
+/*
+justify-content:space-between;
+*/
+
+
+/*
+justify-content:space-around;
+*/
+
+
+/*
+justify-content:space-evenly;
+*/
+
+
+
+/* =====================================================
+   ALIGN-ITEMS
+   =====================================================
+
+   Aligns items along CROSS AXIS.
+
+   Row Direction:
+   Cross Axis = Vertical
+
+   Column Direction:
+   Cross Axis = Horizontal
+
+   Values:
+
+   flex-start
+   center
+   flex-end
+   stretch
+
+   ===================================================== */
+
+
+/*
+align-items:flex-start;
+*/
+
+
+/*
+align-items:center;
+*/
+
+
+/*
+align-items:flex-end;
+*/
+
+
+/*
+align-items:stretch;
+*/
+
+
+
+/* =====================================================
+   GAP
+   =====================================================
+
+   Creates spacing between flex items.
+
+   Example:
+
+   gap:20px;
+
+   ===================================================== */
+
+
+/*
+gap:20px;
+*/
+
+
+
+/* =====================================================
+   FLEX-WRAP
+   =====================================================
+
+   Controls whether items move
+   to next line.
+
+   Values:
+
+   nowrap
+   wrap
+
+   Default:
+
+   nowrap
+
+   ===================================================== */
+
+
+/*
+flex-wrap: nowrap;
+*/
+
+
+/*
+flex-wrap: wrap;
+*/
+
+
+
+/* =====================================================
+   ALIGN-CONTENT
+   =====================================================
+
+   Works only when:
+
+   flex-wrap: wrap;
+
+   AND
+
+   Multiple rows exist.
+
+   Values:
+
+   flex-start
+   center
+   flex-end
+   space-between
+   space-around
+   space-evenly
+
+   ===================================================== */
+
+
+/*
+align-content:center;
+*/
